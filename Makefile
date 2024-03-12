@@ -5,7 +5,7 @@ LIBFT := ./libft
 
 HEADERS := -I./include -I /include -I$(LIBFT)
 LIBS    := -ldl -lglfw -pthread -lm $(LIBFT)/libft.a -fsanitize=address
-SRCS    := push_swap.c checker.c #$(shell find ./src -iname "*.c")
+SRCS    := push_swap.c checker.c swapf.c #$(shell find ./src -iname "*.c")
 OBJS    := ${SRCS:.c=.o}
 
 all:  libft $(NAME)
