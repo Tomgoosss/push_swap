@@ -1,10 +1,10 @@
 NAME    := a.out
-CFLAGS = -Wunreachable-code -Ofast -fsanitize=address
+CFLAGS = -Wunreachable-code -Ofast
 GLFW_PATH := /opt/homebrew/lib
 LIBFT := ./libft
 
 HEADERS := -I./include -I /include -I$(LIBFT)
-LIBS    := -ldl -lglfw -pthread -lm $(LIBFT)/libft.a -fsanitize=address
+LIBS    := -ldl -lglfw -pthread -lm $(LIBFT)/libft.a 
 SRCS    := push_swap.c checker.c swapf.c #$(shell find ./src -iname "*.c")
 OBJS    := ${SRCS:.c=.o}
 
