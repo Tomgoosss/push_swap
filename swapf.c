@@ -23,7 +23,7 @@ void	ft_ss(t_list **head_a, t_list **head_b)
 	ft_printf("ss\n");
 }
 
-void ft_push(t_list **head_a, t_list **head_b, char ab)
+void ft_p(t_list **head_a, t_list **head_b, char ab)
 {
 	t_list *temp;
 
@@ -50,25 +50,32 @@ void ft_push(t_list **head_a, t_list **head_b, char ab)
 		ft_printf("pa\n");
 	}
 }
-// void ft_rotate(t_list **head, char ab)
-// {
-// 	t_list *last;
-// 	t_list *temp;
+void ft_rotate(t_list **head, char ab)
+{
+	t_list *last;
+	t_list *temp;
 
-// 	if (*head == NULL || (*head)->link == NULL)
-// 		return;
-// 	last = *head;
-// 	temp = *head;
-// 	while (last->link != NULL)
-// 		last = last->link;
-// 	*head = (*head)->link;
-// 	temp->link = NULL;
-// 	last->link = *head;
-// 	if (ab == 'a')
-// 		ft_printf("ra\n");
-// 	if (ab == 'b')
-// 		ft_printf("rb\n");
-// }
+	if (*head == NULL || (*head)->link == NULL)
+		return;
+	last = *head;
+	temp = *head;
+	while (last->link != NULL)
+		last = last->link;
+	*head = (*head)->link;
+	temp->link = NULL;
+	last->link = temp;
+	if (ab == 'a')
+		ft_printf("ra\n");
+	if (ab == 'b')
+		ft_printf("rb\n");
+}
+
+void ft_rr(t_list **head_a, t_list **head_b)
+{
+	ft_rotate(head_a, 'x');
+	ft_rotate(head_b, 'x');
+	ft_printf("rr\n");
+}
 
 void ft_rotaterev(t_list **head, char ab)
 {
@@ -91,16 +98,44 @@ void ft_rotaterev(t_list **head, char ab)
 	if (ab == 'b')
 		ft_printf("rrb\n");
 }
+
+void rrr(t_list **head_a, t_list **head_b)
+{
+	ft_rotaterev(head_a, 'x');
+	ft_rotaterev(head_b, 'x');
+	ft_printf("rrr\n");
+}
+
+int stack_len(t_list **head)
+{
+	int i;
+	t_list *temp;
+
+	i = 0;
+	temp = *head;
+
+	while(temp != NULL)
+	{
+		temp = temp->link;
+		i++;
+	}
+	printf("test len = %d\n", i);
+	return(i);
+}
 void teststacks(t_list **head_a, t_list **head_b)
 {
 	t_list *temp_a;
 	t_list *temp_b;
 
-	// ft_push(head_a, head_b, 'a');
+	// ft_p(head_a, head_b, 'a');
+	// ft_p(head_a, head_b, 'a');
+	// ft_p(head_a, head_b, 'a');
+	// ft_p(head_a, head_b, 'a');
 	// ft_ss(head_a, head_b);
 	// ft_s(head_a, 'a');
-	// ft_rr(head_a, 'a');
+	// ft_rr(head_a, head_b);
 	// ft_rotate(head_a, 'a');
+
 	temp_a = *head_a;
 	temp_b = *head_b;
 	while (temp_a != NULL)
@@ -108,7 +143,7 @@ void teststacks(t_list **head_a, t_list **head_b)
 		printf("stack a =%d\n", temp_a->data);
 		temp_a = temp_a->link;
 	}
-	// printf("stack a =%d\n", temp_a->data);
+	printf("\n");
 	while (temp_b != NULL)
 	{
 		printf("stack b =%d\n", temp_b->data);
