@@ -23,7 +23,7 @@ int validcheck(int argc, char *argv[], var *man)
     {
         if (!ft_str_isnumeric(argv[i]))
         {
-            printf("Error: Argument %d is not a number\n", i);
+            printf("Error\n");
             return (1);
         }
         i++;

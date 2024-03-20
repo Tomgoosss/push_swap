@@ -84,7 +84,6 @@ void ft_rotaterev(t_list **head, char ab)
 
 	if (*head == NULL || (*head)->link == NULL)
 		return;
-
 	temp = *head;
 	first = *head;
 	while ((*head)->link != NULL)

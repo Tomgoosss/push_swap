@@ -71,7 +71,7 @@ int main(int argc, char *argv[])
 		exit(EXIT_FAILURE);
 	}
 	stackfiller(argc, argv, man, &head_a);
-	sortmain(&head_a, &head_b);
+	sortmain(&head_a, &head_b, argc - 1);
 	teststacks(&head_a, &head_b);
 	free_nodes(&head_a, &head_b);
 	free(man);

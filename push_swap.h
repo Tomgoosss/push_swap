@@ -26,6 +26,6 @@ void	ft_rotate(t_list **head, char ab);
 void	ft_rr(t_list **head_a, t_list **head_b);
 void	ft_rotaterev(t_list **head, char ab);
 void	rrr(t_list **head_a, t_list **head_b);
-void	sortmain(t_list **head_a, t_list **head_b);
+void	sortmain(t_list **head_a, t_list **head_b, int numstacks);
 int		stack_len(t_list **head);
 #endif
