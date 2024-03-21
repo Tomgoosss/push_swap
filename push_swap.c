@@ -72,7 +72,7 @@ int main(int argc, char *argv[])
 	}
 	stackfiller(argc, argv, man, &head_a);
 	sortmain(&head_a, &head_b, argc - 1);
-	teststacks(&head_a, &head_b);
+	// teststacks(&head_a, &head_b);
 	free_nodes(&head_a, &head_b);
 	free(man);
 }

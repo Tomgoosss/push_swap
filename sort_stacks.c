@@ -13,17 +13,40 @@ void	sort_last_three(t_list **head)
 }
 void fix_two_node(t_list **head_a)
 {
-	if((*head_a)->data < (*head_a)->link->data)
+	if((*head_a)->data > (*head_a)->link->data)
 		ft_rotate(head_a, 'a');
 }
 // void sort_stackb(t_list **head_a, t_list **head_b)
 // {
 // 	push_first_three(head_a, head_b);
 // }
-void sort_four(t_list **head_a, t_list **head_b)
+
+void	sort_four(t_list **head_a, t_list **head_b)
 {
+	t_list	*temp;
+
 	ft_p(head_a, head_b, 'a');
 	sort_last_three(head_a);
+	if ((*head_b)->data < (*head_a)->data)
+		ft_p(head_a, head_b, 'b');
+	else if((*head_b)->data < (*head_a)->link->data)
+	{
+		ft_p(head_a, head_b, 'b');
+		ft_s(head_a, 'a');
+	}
+	else if((*head_b)->data < (*head_a)->link->link->data)
+	{
+		ft_p(head_a, head_b, 'b');
+		ft_rotaterev(head_a, 'a');
+		ft_s(head_a, 'a');
+		ft_rotate(head_a, 'a');
+		ft_rotate(head_a, 'a');
+	}
+	else if ((*head_b)->data > (*head_a)->link->link->data)
+	{
+		ft_p(head_a, head_b, 'b');
+		ft_rotate(head_a, 'a');
+	}
 }
 void	sortmain(t_list **head_a, t_list **head_b, int numstacks)
 {

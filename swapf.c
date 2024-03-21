@@ -36,7 +36,7 @@ void ft_p(t_list **head_a, t_list **head_b, char ab)
 		*head_b = (*head_b)->link;
 		temp->link = *head_a;
 		*head_a = temp;
-		ft_printf("pb\n");
+		ft_printf("pa\n");
 	}
 	else if (ab == 'a')
 	{
@@ -47,7 +47,7 @@ void ft_p(t_list **head_a, t_list **head_b, char ab)
 		*head_a = (*head_a)->link;
 		temp->link = *head_b;
 		*head_b = temp;
-		ft_printf("pa\n");
+		ft_printf("pb\n");
 	}
 }
 void ft_rotate(t_list **head, char ab)
