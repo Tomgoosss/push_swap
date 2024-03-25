@@ -1,11 +1,11 @@
-NAME    := a.out
+NAME    := push_swap
 CFLAGS = -Wunreachable-code -Ofast
 GLFW_PATH := /opt/homebrew/lib
 LIBFT := ./libft
 
 HEADERS := -I./include -I /include -I$(LIBFT)
 LIBS    := -ldl -lglfw -pthread -lm $(LIBFT)/libft.a 
-SRCS    := push_swap.c checker.c swapf.c sort_stacks.c #$(shell find ./src -iname "*.c")
+SRCS    := src/push_swap.c src/checker.c src/swapf.c src/sort_stacks.c src/sort_all_nodes.c src/check_big_num.c #$(shell find ./src -iname "*.c")
 OBJS    := ${SRCS:.c=.o}
 
 all:  libft $(NAME)

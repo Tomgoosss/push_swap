@@ -28,4 +28,7 @@ void	ft_rotaterev(t_list **head, char ab);
 void	rrr(t_list **head_a, t_list **head_b);
 void	sortmain(t_list **head_a, t_list **head_b, int numstacks);
 int		stack_len(t_list **head);
+void	five_or_more(t_list **head_a, t_list **head_b);
+void	sort_last_three(t_list **head);
+int		count_nodes(t_list **head);
 #endif
