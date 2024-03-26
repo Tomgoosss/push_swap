@@ -61,19 +61,25 @@ int main(int argc, char *argv[])
 {
 	t_list *head_a;
 	t_list *head_b;
-	var *man;
+	t_num *man;
 
 	head_b = NULL;
-	man = malloc(sizeof(var));
+	man = malloc(sizeof(t_num));
 	set0(man);
-	if (validcheck(argc, argv, man) == 1)
+	if (validcheck(argc, argv) == 1)
 	{
+		ft_printf("Error\n is not a number");
 		exit(EXIT_FAILURE);
 	}
 	stackfiller(argc, argv, man, &head_a);
-	sortmain(&head_a, &head_b, argc - 1);
+	if(check_dupe_num(&head_a) == 1)
+	{
+		ft_printf("Error\ndupe numbers\n");
+		exit(EXIT_FAILURE);
+	}
+	sortmain(&head_a, &head_b, argc - 1, man);
 	// printf("amount of nodes = %d\n", count_nodes(&head_a));
-	// teststacks(&head_a, &head_b);
+	teststacks(&head_a, &head_b);
 	free_nodes(&head_a, &head_b);
 	free(man);
 }

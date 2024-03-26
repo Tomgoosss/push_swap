@@ -1,8 +1,6 @@
 #include "../push_swap.h"
 
-// swaps head_a to head_b or head_b to head_a
-// when you give a in ab then it pushes head_a to b
-// and the same for b
+//Swap the first 2 elements at the top of stack a or b
 void ft_s(t_list **head, char ab)
 {
 	t_list *temp;
@@ -18,14 +16,14 @@ void ft_s(t_list **head, char ab)
 	if(ab == 'b')
 		ft_printf("sb\n");
 }
-// this swaps head_a
+// swap a and b at the same time
 void	ft_ss(t_list **head_a, t_list **head_b)
 {
 	ft_s(head_a, 'x');
 	ft_s(head_b, 'x');
 	ft_printf("ss\n");
 }
-
+// Take the first element at the top of the stack and put it at the top of the stack.
 void ft_p(t_list **head_a, t_list **head_b, char ab)
 {
 	t_list *temp;
@@ -53,6 +51,8 @@ void ft_p(t_list **head_a, t_list **head_b, char ab)
 		ft_printf("pb\n");
 	}
 }
+// Shift up all elements of the stack by 1.
+// The first element becomes the last one.
 void ft_rotate(t_list **head, char ab)
 {
 	t_list *last;
@@ -72,14 +72,15 @@ void ft_rotate(t_list **head, char ab)
 	if (ab == 'b')
 		ft_printf("rb\n");
 }
-
+// do the above function for both stacks
 void ft_rr(t_list **head_a, t_list **head_b)
 {
 	ft_rotate(head_a, 'x');
 	ft_rotate(head_b, 'x');
 	ft_printf("rr\n");
 }
-
+// Shift down all elements of the stack by 1.
+// The last element becomes the first one.
 void ft_rotaterev(t_list **head, char ab)
 {
 	t_list *temp;

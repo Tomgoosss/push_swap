@@ -1,5 +1,5 @@
 NAME    := push_swap
-CFLAGS = -Wunreachable-code -Ofast
+CFLAGS =  #-Wunreachable-code -Ofast
 GLFW_PATH := /opt/homebrew/lib
 LIBFT := ./libft
 

@@ -61,7 +61,7 @@ int count_nodes(t_list **head)
 	}
 	return(i);
 }
-void	sortmain(t_list **head_a, t_list **head_b, int numstacks)
+void	sortmain(t_list **head_a, t_list **head_b, int numstacks, t_num *man)
 {
 	if(numstacks == 1)
 		return;
@@ -72,5 +72,5 @@ void	sortmain(t_list **head_a, t_list **head_b, int numstacks)
 	if(numstacks == 4)
 		sort_four(head_a, head_b);
 	if(numstacks >= 5)
-		five_or_more(head_a, head_b);
+		five_or_more(head_a, head_b, man);
 }
