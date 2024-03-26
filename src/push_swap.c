@@ -64,7 +64,7 @@ int main(int argc, char *argv[])
 	t_num *man;
 
 	head_b = NULL;
-	man = malloc(sizeof(t_num));
+	man = ft_calloc(1, sizeof(t_num));
 	set0(man);
 	if (validcheck(argc, argv) == 1)
 	{

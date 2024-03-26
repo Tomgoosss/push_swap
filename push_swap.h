@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "libft/libft.h"
+#include <limits.h>
 
 typedef struct node {
 	int data;
@@ -11,7 +12,13 @@ typedef struct node {
 } t_list;
 
 typedef struct num{
-	int allnum;
+	int rotate_a;
+	int rotate_b;
+	int revrotate_a;
+	int revrotate_b;
+	int nodes_a;
+	int nodes_b;
+	char moves[1000][4];
 } t_num;
 
 int		ft_str_isnumeric(char *str);
@@ -27,7 +34,7 @@ void	ft_rotaterev(t_list **head, char ab);
 void	rrr(t_list **head_a, t_list **head_b);
 void	sortmain(t_list **head_a, t_list **head_b, int numstacks);
 int		stack_len(t_list **head);
-void	five_or_more(t_list **head_a, t_list **head_b);
+void	five_or_more(t_list **head_a, t_list **head_b, t_num *man);
 void	sort_last_three(t_list **head);
 int		count_nodes(t_list **head);
 int		check_dupe_num(t_list **head_a);

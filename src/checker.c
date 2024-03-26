@@ -53,8 +53,3 @@ int validcheck(int nodeamount, char *argv[])
     }
 	return(0);
 }
-// set all struct to 0
-void set0(t_num *man)
-{
-	man->allnum = 0;
-}
