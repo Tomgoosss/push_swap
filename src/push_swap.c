@@ -78,7 +78,7 @@ int main(int argc, char *argv[])
 	}
 	sortmain(&head_a, &head_b, argc - 1, man);
 	// printf("amount of nodes = %d\n", count_nodes(&head_a));
-	// teststacks(&head_a, &head_b);
+	teststacks(&head_a, &head_b);
 	free_nodes(&head_a, &head_b);
 	free(man);
 }

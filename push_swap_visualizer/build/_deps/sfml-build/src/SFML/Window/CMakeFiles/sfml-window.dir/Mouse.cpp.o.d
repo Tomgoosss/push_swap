@@ -1,20 +1,20 @@
 _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Mouse.cpp.o: \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/src/SFML/Window/Mouse.cpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Window/Mouse.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Window/Export.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Config.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/Vector2.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/Vector2.inl \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/src/SFML/Window/InputImpl.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/src/SFML/Window/Unix/InputImpl.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Window/Keyboard.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Window/Window.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Window/ContextSettings.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Window/Cursor.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/NonCopyable.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/Export.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Window/GlResource.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Window/VideoMode.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/src/SFML/Window/Mouse.cpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Window/Mouse.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Window/Export.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Config.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/Vector2.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/Vector2.inl \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/src/SFML/Window/InputImpl.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/src/SFML/Window/Unix/InputImpl.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Window/Keyboard.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Window/Window.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Window/ContextSettings.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Window/Cursor.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/NonCopyable.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/Export.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Window/GlResource.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Window/VideoMode.hpp \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/vector \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/stl_algobase.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12/bits/c++config.h \
@@ -65,12 +65,12 @@ _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Mouse.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/backward/binders.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/range_access.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/vector.tcc \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Window/WindowHandle.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Window/WindowStyle.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/Clock.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/Time.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/String.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/Utf.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Window/WindowHandle.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Window/WindowStyle.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/Clock.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/Time.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/String.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/Utf.hpp \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/algorithm \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/stl_algo.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/algorithmfwd.h \
@@ -204,7 +204,7 @@ _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Mouse.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/codecvt.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/locale_facets_nonio.tcc \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/locale_conv.h \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/Utf.inl \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/Utf.inl \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/iterator \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/stream_iterator.h \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/String.inl
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/String.inl

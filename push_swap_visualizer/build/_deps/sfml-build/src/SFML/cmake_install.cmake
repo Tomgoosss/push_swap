@@ -1,4 +1,4 @@
-# Install script for directory: /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/src/SFML
+# Install script for directory: /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/src/SFML
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,9 +44,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-build/src/SFML/System/cmake_install.cmake")
-  include("/home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-build/src/SFML/Window/cmake_install.cmake")
-  include("/home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-build/src/SFML/Graphics/cmake_install.cmake")
+  include("/home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-build/src/SFML/System/cmake_install.cmake")
+  include("/home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-build/src/SFML/Window/cmake_install.cmake")
+  include("/home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-build/src/SFML/Graphics/cmake_install.cmake")
 
 endif()
 

@@ -1,8 +1,8 @@
 _deps/sfml-build/src/SFML/Graphics/CMakeFiles/sfml-graphics.dir/Color.cpp.o: \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/src/SFML/Graphics/Color.cpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Graphics/Color.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Graphics/Export.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Config.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/src/SFML/Graphics/Color.cpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Graphics/Color.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Graphics/Export.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Config.hpp \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/algorithm \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/stl_algobase.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12/bits/c++config.h \

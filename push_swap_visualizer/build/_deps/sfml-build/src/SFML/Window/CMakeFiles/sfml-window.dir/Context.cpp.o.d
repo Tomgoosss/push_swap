@@ -1,15 +1,15 @@
 _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Context.cpp.o: \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/src/SFML/Window/Context.cpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Window/Context.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Window/Export.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Config.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Window/GlResource.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/NonCopyable.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/Export.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Window/ContextSettings.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/src/SFML/Window/GlContext.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/ThreadLocalPtr.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/ThreadLocal.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/src/SFML/Window/Context.cpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Window/Context.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Window/Export.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Config.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Window/GlResource.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/NonCopyable.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/Export.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Window/ContextSettings.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/src/SFML/Window/GlContext.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/ThreadLocalPtr.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/ThreadLocal.hpp \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/cstdlib \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
@@ -58,4 +58,4 @@ _deps/sfml-build/src/SFML/Window/CMakeFiles/sfml-window.dir/Context.cpp.o: \
   /usr/include/alloca.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/std_abs.h \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/ThreadLocalPtr.inl
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/ThreadLocalPtr.inl

@@ -1,9 +1,9 @@
 _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ThreadImpl.cpp.o: \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/src/SFML/System/Unix/ThreadImpl.cpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/src/SFML/System/Unix/ThreadImpl.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Config.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/NonCopyable.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/Export.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/src/SFML/System/Unix/ThreadImpl.cpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/src/SFML/System/Unix/ThreadImpl.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Config.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/NonCopyable.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/Export.hpp \
   /usr/include/pthread.h /usr/include/features.h \
   /usr/include/features-time64.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -43,7 +43,7 @@ _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ThreadImpl.cpp.
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/Thread.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/Thread.hpp \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/cstdlib \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
@@ -64,7 +64,7 @@ _deps/sfml-build/src/SFML/System/CMakeFiles/sfml-system.dir/Unix/ThreadImpl.cpp.
   /usr/include/alloca.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/std_abs.h \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/Thread.inl \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/Thread.inl \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/iostream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/ostream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/ios \

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DSFML_SYSTEM_EXPORTS
 
-CXX_INCLUDES = -I/home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include -I/home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/src
+CXX_INCLUDES = -I/home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include -I/home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/src
 
 CXX_FLAGS = -fPIC -fvisibility=hidden
 

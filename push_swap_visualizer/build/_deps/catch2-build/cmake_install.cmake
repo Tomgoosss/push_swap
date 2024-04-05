@@ -1,4 +1,4 @@
-# Install script for directory: /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/catch2-src
+# Install script for directory: /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/catch2-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

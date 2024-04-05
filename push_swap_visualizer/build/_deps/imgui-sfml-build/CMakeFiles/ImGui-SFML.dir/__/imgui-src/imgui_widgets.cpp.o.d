@@ -1,14 +1,14 @@
 _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/__/imgui-src/imgui_widgets.cpp.o: \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/imgui-src/imgui_widgets.cpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/imgui-src/imgui.h \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/imgui-sfml-src/imconfig-SFML.h \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Graphics/Color.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Graphics/Export.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Config.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/Vector2.hpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/Vector2.inl \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/imgui-sfml-src/imgui-SFML_export.h \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/imgui-src/imconfig.h \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/imgui-src/imgui_widgets.cpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/imgui-src/imgui.h \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/imgui-sfml-src/imconfig-SFML.h \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Graphics/Color.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Graphics/Export.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/Config.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/Vector2.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src/include/SFML/System/Vector2.inl \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/imgui-sfml-src/imgui-SFML_export.h \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/imgui-src/imconfig.h \
   /usr/lib/llvm-12/lib/clang/12.0.1/include/float.h \
   /usr/lib/llvm-12/lib/clang/12.0.1/include/stdarg.h \
   /usr/lib/llvm-12/lib/clang/12.0.1/include/stddef.h \
@@ -25,7 +25,7 @@ _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/__/imgui-src/imgui_widgets.cpp.
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
   /usr/include/strings.h /usr/include/assert.h \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/imgui-src/imgui_internal.h \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/imgui-src/imgui_internal.h \
   /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
   /usr/include/x86_64-linux-gnu/bits/time64.h \
@@ -92,7 +92,7 @@ _deps/imgui-sfml-build/CMakeFiles/ImGui-SFML.dir/__/imgui-src/imgui_widgets.cpp.
   /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/imgui-src/imstb_textedit.h \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/imgui-src/imstb_textedit.h \
   /usr/include/ctype.h \
   /usr/lib/llvm-12/lib/clang/12.0.1/include/stdint.h \
   /usr/include/stdint.h /usr/include/x86_64-linux-gnu/bits/wchar.h \

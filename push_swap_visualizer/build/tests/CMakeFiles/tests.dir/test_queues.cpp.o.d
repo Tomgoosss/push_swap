@@ -1,6 +1,6 @@
 tests/CMakeFiles/tests.dir/test_queues.cpp.o: \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/tests/test_queues.cpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/catch2-src/single_include/catch2/catch.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/tests/test_queues.cpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/catch2-src/single_include/catch2/catch.hpp \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/string_view \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/optional \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/cstddef \
@@ -306,7 +306,7 @@ tests/CMakeFiles/tests.dir/test_queues.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/iterator \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/stream_iterator.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/iostream \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/src/../include/queues.h \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/src/../include/queues.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/list \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/stl_list.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/list.tcc

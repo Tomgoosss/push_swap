@@ -1,6 +1,6 @@
 tests/CMakeFiles/tests.dir/test_pushswap.cpp.o: \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/tests/test_pushswap.cpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/catch2-src/single_include/catch2/catch.hpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/tests/test_pushswap.cpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/catch2-src/single_include/catch2/catch.hpp \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/string_view \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/optional \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/cstddef \
@@ -226,7 +226,7 @@ tests/CMakeFiles/tests.dir/test_pushswap.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/random.tcc \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/numeric \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/stl_numeric.h \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/src/../include/pushswap.h \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/src/../include/pushswap.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/list \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/stl_list.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/list.tcc

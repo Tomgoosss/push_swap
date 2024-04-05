@@ -77,10 +77,22 @@ void rotate_to_correct_spot(t_num *man, t_list **head_b)
 		man->rev_b--;
 	}
 }
+
+void push_correct(t_list **head_a, t_list **head_b, t_num *man)
+{
+	while ((*head_b)->data < man->num1_a)
+		ft_p(head_a, head_b, 'b');
+	// ft_rotaterev(head_a, 'a');
+	// while ((*head_b)->data > man->num2_a)
+	// 	ft_p(head_a, head_b, 'b');
+	// while ((*head_b)->data > man->num3_a)
+	// 	ft_p(head_a, head_b, 'b');
+}
 void push_to_a(t_list **head_a, t_list **head_b, t_num *man)
 {
 	man->nodes_b = count_nodes(head_b);
 	take_3_numbers_a(*head_a, man);
 	find_correct_spot(head_a, head_b, man);
 	rotate_to_correct_spot(man, head_b);
+	push_correct(head_a, head_b, man);
 }

@@ -1,6 +1,6 @@
 src/CMakeFiles/VisualizerLib.dir/utils.cpp.o: \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/src/utils.cpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/src/../include/utils.h \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/src/utils.cpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/src/../include/utils.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/list \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/stl_algobase.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12/bits/c++config.h \

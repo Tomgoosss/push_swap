@@ -30,8 +30,20 @@ void sort_rotate(t_num *man)
 
 void rotate(t_num *man, t_list **head_a, t_list **head_b)
 {
-	printf("this is rorate \n rot_a %d\n rev_a %d\n rot_b %d\n rev_b %d\n",man->rot_a, man->rev_a, man->rot_b, man->rev_b);
+	// printf("this is rorate \n rot_a %d\n rev_a %d\n rot_b %d\n rev_b %d\n",man->rot_a, man->rev_a, man->rot_b, man->rev_b);
 	// 	teststacks(head_a, head_b);
+	while(man->rev_b > 0 && man->rev_a > 0)
+	{
+		rrr(head_a, head_b);
+		man->rev_b--;
+		man->rev_a--;
+	}
+	while(man->rot_a > 0 && man->rot_b > 0)
+	{
+		ft_rr(head_a, head_b);
+		man->rot_a--;
+		man->rot_b--;
+	}
 	while(man->rot_a > 0)
 	{
 		ft_rotate(head_a, 'a');
@@ -77,7 +89,6 @@ void check_if_fit(t_list *node_a, t_list *node_b,t_list *prev_b, t_num *man)
 	sort_rotate(man);
 
 	int count;
-	int temp;
 
 	count = 0;
 	if(check_correct_place(node_a, node_b, prev_b, man))
@@ -93,11 +104,10 @@ void check_if_fit(t_list *node_a, t_list *node_b,t_list *prev_b, t_num *man)
 	}
 	else
 		return;
-	if (count < temp)
+	if (count < man->temp)
 	{
-		temp = count;
+		man->temp = count;
 		safe_moves(man);
-		// printf("count = %d\n", temp);
 	}
 }
 
@@ -106,9 +116,8 @@ void count_moves(t_list **head_a, t_list **head_b, t_num *man)
 	t_list *check_a;
 	t_list *check_b;
 	t_list *prev_b;
-	int		temp;
 
-	temp = INT_MAX;
+	man->temp = INT_MAX;
 	prev_b = *head_b;
 	check_a = *head_a;
 	check_b = *head_b;
@@ -173,6 +182,7 @@ void five_or_more(t_list **head_a, t_list **head_b, t_num *man)
 	if((*head_b)->data < (*head_b)->link->data)
 		ft_s(head_b, 'b');
 	man->nodes_a = count_nodes(head_a);
+
 	while(man->nodes_a > 3)
 	{
 		man->nodes_a = count_nodes(head_a);
@@ -185,7 +195,7 @@ void five_or_more(t_list **head_a, t_list **head_b, t_num *man)
 		// teststacks(head_a, head_b);
 	}
 		// teststacks(head_a, head_b);
-		// sort_last_three(head_a);
-		// push_to_a(head_a, head_b, man);
+		sort_last_three(head_a);
+		push_to_a(head_a, head_b, man);
 
 }

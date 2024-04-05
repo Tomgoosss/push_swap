@@ -30,7 +30,7 @@ typedef struct num{
 	int num2_a;
 	int num3_a;
 	int count_b;
-
+	int temp;
 } t_num;
 
 int		ft_str_isnumeric(char *str);

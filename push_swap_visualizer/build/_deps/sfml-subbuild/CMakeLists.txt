@@ -14,8 +14,8 @@ project(sfml-populate NONE)
 include(ExternalProject)
 ExternalProject_Add(sfml-populate
                      "UPDATE_DISCONNECTED" "False" "URL" "https://github.com/SFML/SFML/releases/download/2.5.1/SFML-2.5.1-sources.zip"
-                    SOURCE_DIR          "/home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-src"
-                    BINARY_DIR          "/home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/sfml-build"
+                    SOURCE_DIR          "/home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-src"
+                    BINARY_DIR          "/home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/sfml-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

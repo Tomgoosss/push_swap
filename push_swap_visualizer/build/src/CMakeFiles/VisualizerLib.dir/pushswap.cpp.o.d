@@ -1,6 +1,6 @@
 src/CMakeFiles/VisualizerLib.dir/pushswap.cpp.o: \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/src/pushswap.cpp \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/src/../include/pushswap.h \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/src/pushswap.cpp \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/src/../include/pushswap.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/string \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
@@ -131,7 +131,7 @@ src/CMakeFiles/VisualizerLib.dir/pushswap.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/allocated_ptr.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/ext/aligned_buffer.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/bits/list.tcc \
-  /home/tgoossen/Documents/push_swap/push_swap_visualizer/src/../include/utils.h \
+  /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/src/../include/utils.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/array \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/compare \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/12/../../../../include/c++/12/memory \

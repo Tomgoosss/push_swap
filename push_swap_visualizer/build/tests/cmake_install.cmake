@@ -1,4 +1,4 @@
-# Install script for directory: /home/tgoossen/Documents/push_swap/push_swap_visualizer/tests
+# Install script for directory: /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

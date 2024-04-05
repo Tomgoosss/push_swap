@@ -1,4 +1,4 @@
-# Install script for directory: /home/tgoossen/Documents/push_swap/push_swap_visualizer/dependencies/imgui-sfml
+# Install script for directory: /home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/dependencies/imgui-sfml
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,6 +44,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tgoossen/Documents/push_swap/push_swap_visualizer/build/_deps/imgui-sfml-build/cmake_install.cmake")
+  include("/home/tgoossen/Documents/push_swap2.0/push_swap_visualizer/build/_deps/imgui-sfml-build/cmake_install.cmake")
 endif()
 
