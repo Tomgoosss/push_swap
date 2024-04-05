@@ -18,10 +18,10 @@ int check_correct_place(t_list *node_a, t_list *node_b,t_list *prev_b, t_num *ma
 // and with rev rotate i do / 2 - 1 cus half int (1.5) rounds up to 1 so that why i add 0.5 so it rounds it up to 2
 void sort_rotate(t_num *man)
 {
-	// man->temp_rot_a = 0;
-	// man->temp_rot_b = 0;
-	// man->temp_rrot_a = 0;
-	// man->temp_rrot_b = 0;
+	man->temp_rrot_b = 0;
+	man->temp_rrot_a = 0;
+	man->temp_rot_a = 0;
+	man->temp_rot_b = 0;
 	man->temp_rrot_b = man->nodes_b - man->rotate_b;
 	man->temp_rrot_a = man->nodes_a - man->rotate_a;
 	man->temp_rot_a = man->rotate_a;
@@ -30,8 +30,8 @@ void sort_rotate(t_num *man)
 
 void rotate(t_num *man, t_list **head_a, t_list **head_b)
 {
-	printf("rot_a %d\n rev_a %d\n rot_b %d\n rev_b %d\n",man->rot_a, man->rev_a, man->rot_b, man->rev_b);
-		// teststacks(head_a, head_b);
+	printf("this is rorate \n rot_a %d\n rev_a %d\n rot_b %d\n rev_b %d\n",man->rot_a, man->rev_a, man->rot_b, man->rev_b);
+	// 	teststacks(head_a, head_b);
 	while(man->rot_a > 0)
 	{
 		ft_rotate(head_a, 'a');
@@ -52,11 +52,15 @@ void rotate(t_num *man, t_list **head_a, t_list **head_b)
 		ft_rotaterev(head_b, 'b');
 		man->rev_b--;
 	}
-	teststacks(head_a, head_b);
+	// teststacks(head_a, head_b);
 }
 
 void safe_moves(t_num *man)
 {
+	man->rot_a = 0;
+	man->rot_b = 0;
+	man->rev_b = 0;
+	man->rev_a = 0;
 	if(man->temp_rot_a < man->temp_rrot_a)
 		man->rot_a = man->temp_rot_a;
 	else
@@ -65,7 +69,7 @@ void safe_moves(t_num *man)
 		man->rot_b = man->temp_rot_b;
 	else
 		man->rev_b = man->temp_rrot_b;
-	// printf("rot a %d\n rev a %d\n rot b %d\n rev b %d\n", man->rot_a, man->rev_a, man->rot_b, man->rev_b);
+	// printf("this is safe moves \n rot a %d\n rev a %d\n rot b %d\n rev b %d\n", man->rot_a, man->rev_a, man->rot_b, man->rev_b);
 }
 
 void check_if_fit(t_list *node_a, t_list *node_b,t_list *prev_b, t_num *man)
@@ -93,7 +97,7 @@ void check_if_fit(t_list *node_a, t_list *node_b,t_list *prev_b, t_num *man)
 	{
 		temp = count;
 		safe_moves(man);
-		printf("count = %d\n", temp);
+		// printf("count = %d\n", temp);
 	}
 }
 
@@ -114,9 +118,6 @@ void count_moves(t_list **head_a, t_list **head_b, t_num *man)
 	man->rotate_a = 0;
 	while(man->rotate_a < man->nodes_a)
 	{
-		// these print f statements check if the rotate is == the node value
-		// printf("this is the rotate amound %d\n", man->rotate_a);
-		// printf("this is the data of node_b %d\n", check_a->data);
 		while(man->rotate_b < man->nodes_b)
 		{
 			check_if_fit(check_a, check_b, prev_b, man);
@@ -129,7 +130,7 @@ void count_moves(t_list **head_a, t_list **head_b, t_num *man)
 		check_a = check_a->link;
 		man->rotate_a++;
 	}
-	printf("rot a %d,\n ver rot a %d,\n rot b %d,\n rev rot b %d,\n", man->temp_rot_a, man->temp_rrot_a, man->temp_rot_b, man->temp_rrot_b);
+	// printf("rot a %d,\n ver rot a %d,\n rot b %d,\n rev rot b %d,\n", man->temp_rot_a, man->temp_rrot_a, man->temp_rot_b, man->temp_rrot_b);
 }
 
 void push2(t_list **head_a, t_list **head_b)
@@ -152,10 +153,16 @@ void make_high_and_low(t_list *head_b, t_num * man)
 		head_b = head_b->link;
 	}
 }
-
-void set_high_up(t_list **head_a, t_list **head_b)
+void setzero(t_num *man)
 {
-
+	man->temp_rot_a = 0;
+	man->temp_rot_b = 0;
+	man->temp_rrot_a = 0;
+	man->temp_rrot_b = 0;
+	// man->rot_a = 0;
+	// man->rot_b = 0;
+	// man->rev_a = 0;
+	// man->rev_b = 0;
 }
 
 void five_or_more(t_list **head_a, t_list **head_b, t_num *man)
@@ -168,16 +175,17 @@ void five_or_more(t_list **head_a, t_list **head_b, t_num *man)
 	man->nodes_a = count_nodes(head_a);
 	while(man->nodes_a > 3)
 	{
-		man->temp = INT_MAX;
 		man->nodes_a = count_nodes(head_a);
 		man->nodes_b = count_nodes(head_b);
 		make_high_and_low(*head_b, man);
 		count_moves(head_a, head_b, man);
 		rotate(man, head_a, head_b);
 		ft_p(head_a, head_b, 'a');
-		// rotate(man, *head_a, *head_b);
-		// printf("this is the %d repeat,\n\n", i);
+		man->nodes_a = count_nodes(head_a);
 		// teststacks(head_a, head_b);
-		i++;
 	}
+		// teststacks(head_a, head_b);
+		// sort_last_three(head_a);
+		// push_to_a(head_a, head_b, man);
+
 }
