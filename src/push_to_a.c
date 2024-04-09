@@ -42,7 +42,7 @@ void find_correct_spot(t_list **head_a, t_list **head_b, t_num *man)
 	temp_a = *head_a;
 	temp_b = *head_b;
 	temp_b_prev = *head_b;
-	while(temp_b_prev)
+	while(temp_b_prev->link)
 		temp_b_prev = temp_b_prev->link;
 	while(temp_b)
 	{
@@ -82,10 +82,11 @@ void push_correct(t_list **head_a, t_list **head_b, t_num *man)
 {
 	while ((*head_b)->data < man->num1_a)
 		ft_p(head_a, head_b, 'b');
+	ft_rotaterev(head_a, 'a');
+	while ((*head_b)->data < man->num3_a)
+		ft_p(head_a, head_b, 'b');
 	// ft_rotaterev(head_a, 'a');
-	// while ((*head_b)->data > man->num2_a)
-	// 	ft_p(head_a, head_b, 'b');
-	// while ((*head_b)->data > man->num3_a)
+	// while ((*head_b)->data < man->num2_a)
 	// 	ft_p(head_a, head_b, 'b');
 }
 void push_to_a(t_list **head_a, t_list **head_b, t_num *man)
