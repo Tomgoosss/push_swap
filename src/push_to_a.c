@@ -120,9 +120,9 @@ void high_low(t_list **head_b, t_num *man)
 void push_to_a(t_list **head_a, t_list **head_b, t_num *man)
 {
 	man->nodes_b = count_nodes(head_b);
-	// take_3_numbers_a(*head_a, man);
-	// find_correct_spot(head_a, head_b, man);
-	// push_correct(head_a, head_b, man);
-	high_low(head_b, man);
+	take_3_numbers_a(*head_a, man);
+	find_correct_spot(head_a, head_b, man);
 	rotate_to_correct_spot(man, head_a, head_b);
+	// push_correct(head_a, head_b, man);
+	// high_low(head_b, man);
 }
