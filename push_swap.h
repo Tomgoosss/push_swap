@@ -31,6 +31,7 @@ typedef struct num{
 	int num3_a;
 	int count_b;
 	int temp;
+	int numrot;
 } t_num;
 
 int		ft_str_isnumeric(char *str);
@@ -53,5 +54,5 @@ int		check_dupe_num(t_list **head_a);
 void	fix_two_node(t_list **head_a);
 void	rotate(t_num *man, t_list **head_a, t_list **head_b);
 void push_to_a(t_list **head_a, t_list **head_b, t_num *man);
-
+void	high_low(t_list **head_b, t_num *man);
 #endif
