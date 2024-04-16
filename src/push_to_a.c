@@ -1,6 +1,6 @@
 #include "../push_swap.h"
 
-void sort_rotate_a(t_num *man)
+void sort_rotate_b(t_num *man)
 {
 	man->temp_rrot_b = 0;
 	man->temp_rot_b = 0;
@@ -8,9 +8,17 @@ void sort_rotate_a(t_num *man)
 	man->temp_rrot_b= man->nodes_b - man->count_b;
 }
 
+void sort_rotate_a(t_num *man)
+{
+	man->temp_rrot_a = 0;
+	man->temp_rot_a = 0;
+	man->temp_rot_a = man->count_a;
+	man->temp_rrot_a = man->nodes_a - man->count_a;
+}
+
 void save_moves_a(t_num *man, int num)
 {
-	sort_rotate_a(man);
+	sort_rotate_b(man);
 	int count;
 	int temp;
 
@@ -83,38 +91,82 @@ void rotate_to_correct_spot(t_num *man, t_list **head_a ,t_list **head_b)
 	}
 }
 
-// void push_correct(t_list **head_a, t_list **head_b, t_num *man)
-// {
-// 	take_3_numbers_a(*head_a, man);
-// 	while((*head_b)->data < man->num1_a && (*head_b)->data  man->num3_a)
-// 		ft_p(head_a, head_b, 'b');
-// 	// ft_rotaterev(head_a, 'a');
-// 	// while((*head_b)->data < man->num3_a && (*head_b)->data > man->num2_a)
-// 	// 	ft_p(head_a, head_b, 'b');
-// }
+int check_if_push(t_list *head_a, t_list *head_b, t_list *last_b, t_num *man)
+{
+	if(!head_b)
+		return(0);
+	if (head_b->data < head_a->data && head_b->data > last_b->data)
+		return(1);
+	if(head_b->data > man->high_a && head_b->data == man->high_b)
+		return(1);
+	if(head_b->data < man->low_a && head_a->data == man->low_a)
+		return(1);
 
-void high_low(t_list **head_b, t_num *man)
+	return (0);
+}
+
+void push_correct(t_list **head_a, t_list **head_b, t_num *man)
+{
+	take_3_numbers_a(*head_a, man);
+	t_list *last_a;
+
+	while(*head_b)
+	{
+		make_high_and_low_a(*head_a, man);
+		make_high_and_low_b(*head_b, man);
+		last_a = *head_a;
+		while (last_a->link)
+			last_a = last_a->link;
+		while(check_if_push(*head_a, *head_b, last_a, man))
+			ft_p(head_a, head_b, 'b');
+		// teststacks(head_a, head_b);
+		ft_rotaterev(head_a, 'a');
+	}
+}
+void rot_a(t_list **head_a, t_num *man)
+{
+	if(man->temp_rot_a < man->temp_rrot_a)
+	{
+		while(man->temp_rot_a != 0)
+		{
+			ft_rotate(head_a, 'a');
+			man->temp_rot_a--;
+		}
+	}
+	else
+	{
+		while(man->temp_rrot_a != 0)
+		{
+			ft_rotaterev(head_a, 'a');
+			man->temp_rrot_a--;
+		}
+	}
+}
+
+void high_low(t_list **head_a, t_num *man)
 {
 	int temp;
 	int temp_i;
-	t_list *temp_h;
+	t_list *temp_a;
 
-	temp = 0;
+	temp = INT_MAX;
 	temp_i = 0;
-	temp_h = *head_b;
-	man->count_b = 0;
-	while(temp_h)
+	temp_a = *head_a;
+	man->count_a = 0;
+	while(temp_a)
 	{
-		if (temp_h->data > temp)
+		if (temp_a->data < temp)
 		{
-			temp = temp_h->data;
-			man->count_b = temp_i;
+			temp = temp_a->data;
+			man->count_a = temp_i;
+			// printf("low = %d\n", temp);
 		}
-		temp_h = temp_h->link;
+		temp_a = temp_a->link;
 		temp_i++;
 	}
-	printf("temp = %d, i = %d\n",temp, man->count_b);
+	man->nodes_a = count_nodes(head_a);
 	sort_rotate_a(man);
+	rot_a(head_a, man);
 }
 
 void push_to_a(t_list **head_a, t_list **head_b, t_num *man)
@@ -123,6 +175,6 @@ void push_to_a(t_list **head_a, t_list **head_b, t_num *man)
 	take_3_numbers_a(*head_a, man);
 	find_correct_spot(head_a, head_b, man);
 	rotate_to_correct_spot(man, head_a, head_b);
-	// push_correct(head_a, head_b, man);
-	// high_low(head_b, man);
+	push_correct(head_a, head_b, man);
+	high_low(head_a, man);
 }

@@ -26,10 +26,13 @@ typedef struct num{
 	int nodes_b;
 	int high_b;
 	int low_b;
+	int high_a;
+	int low_a;
 	int num1_a;
 	int num2_a;
 	int num3_a;
 	int count_b;
+	int count_a;
 	int temp;
 	int numrot;
 } t_num;
@@ -53,6 +56,9 @@ int		count_nodes(t_list **head);
 int		check_dupe_num(t_list **head_a);
 void	fix_two_node(t_list **head_a);
 void	rotate(t_num *man, t_list **head_a, t_list **head_b);
-void push_to_a(t_list **head_a, t_list **head_b, t_num *man);
+void	push_to_a(t_list **head_a, t_list **head_b, t_num *man);
 void	high_low(t_list **head_b, t_num *man);
+void	make_high_and_low_a(t_list *head_a, t_num * man);
+void	make_high_and_low_b(t_list *head_b, t_num * man);
+
 #endif

@@ -148,7 +148,23 @@ void push2(t_list **head_a, t_list **head_b)
 	ft_p(head_a, head_b, 'a');
 }
 
-void make_high_and_low(t_list *head_b, t_num * man)
+void make_high_and_low_a(t_list *head_a, t_num * man)
+{
+	man->high_a = 0;
+	man->low_a = INT_MAX;
+
+	while(head_a != NULL)
+	{
+		if(head_a->data > man->high_a)
+			man->high_a = head_a->data;
+		if(head_a->data < man->low_a)
+			man->low_a = head_a->data;
+		head_a = head_a->link;
+	}
+	// printf("high_a = %d\n low_a = %D\n",man->high_a, man->low_a);
+}
+
+void make_high_and_low_b(t_list *head_b, t_num * man)
 {
 	man->high_b = 0;
 	man->low_b = INT_MAX;
@@ -187,7 +203,7 @@ void five_or_more(t_list **head_a, t_list **head_b, t_num *man)
 	{
 		man->nodes_a = count_nodes(head_a);
 		man->nodes_b = count_nodes(head_b);
-		make_high_and_low(*head_b, man);
+		make_high_and_low_b(*head_b, man);
 		count_moves(head_a, head_b, man);
 		rotate(man, head_a, head_b);
 		ft_p(head_a, head_b, 'a');
