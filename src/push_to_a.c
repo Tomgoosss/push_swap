@@ -91,17 +91,18 @@ void rotate_to_correct_spot(t_num *man, t_list **head_a ,t_list **head_b)
 	}
 }
 
-int check_if_push(t_list *head_a, t_list *head_b, t_list *last_b, t_num *man)
+int check_if_push(t_list *head_a, t_list *head_b, t_list *last_a, t_num *man)
 {
 	if(!head_b)
 		return(0);
-	if (head_b->data < head_a->data && head_b->data > last_b->data)
+	if (head_b->data < head_a->data && head_b->data > last_a->data)
 		return(1);
 	if(head_b->data > man->high_a && head_b->data == man->high_b)
 		return(1);
 	if(head_b->data < man->low_a && head_a->data == man->low_a)
 		return(1);
-
+	if(last_a->data == man->high_a && head_b->data < head_a->data)
+		return(1);
 	return (0);
 }
 
@@ -112,13 +113,18 @@ void push_correct(t_list **head_a, t_list **head_b, t_num *man)
 
 	while(*head_b)
 	{
-		make_high_and_low_a(*head_a, man);
-		make_high_and_low_b(*head_b, man);
+
 		last_a = *head_a;
 		while (last_a->link)
 			last_a = last_a->link;
+		make_high_and_low_a(*head_a, man);
+		make_high_and_low_b(*head_b, man);
 		while(check_if_push(*head_a, *head_b, last_a, man))
+		{
 			ft_p(head_a, head_b, 'b');
+			make_high_and_low_a(*head_a, man);
+			make_high_and_low_b(*head_b, man);
+		}
 		// teststacks(head_a, head_b);
 		ft_rotaterev(head_a, 'a');
 	}
