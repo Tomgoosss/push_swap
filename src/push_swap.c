@@ -31,7 +31,6 @@ void stackfiller(int argc, char *argv[], t_num *man, t_list **head_a)
 	int i = 1;
 
 	*head_a = NULL;
-
 	while (i < argc)
 	{
 		add_node_back(head_a, makenode(argv[i]));
@@ -59,7 +58,7 @@ void free_nodes(t_list **head_a, t_list **head_b)
 
 int main(int argc, char *argv[])
 {
-	t_list *head_a;
+	t_list	*head_a;
 	t_list *head_b;
 	t_num *man;
 
@@ -67,13 +66,16 @@ int main(int argc, char *argv[])
 	man = ft_calloc(1, sizeof(t_num));
 	if (validcheck(argc, argv) == 1)
 	{
-		ft_printf("Error\n is not a number");
+		write(2, "Error\n", 6);
+		free(man);
 		exit(EXIT_FAILURE);
 	}
 	stackfiller(argc, argv, man, &head_a);
 	if(check_dupe_num(&head_a) == 1)
 	{
-		ft_printf("Error\ndupe numbers\n");
+		write(2, "Error\n", 6);
+		free_nodes(&head_a, &head_b);
+		free(man);
 		exit(EXIT_FAILURE);
 	}
 	sortmain(&head_a, &head_b, argc - 1, man);

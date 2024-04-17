@@ -213,6 +213,5 @@ void five_or_more(t_list **head_a, t_list **head_b, t_num *man)
 		// teststacks(head_a, head_b);
 		sort_last_three(head_a);
 		push_to_a(head_a, head_b, man);
-		// teststacks(head_a, head_b);
 
 }

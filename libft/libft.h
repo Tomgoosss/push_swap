@@ -6,7 +6,7 @@
 /*   By: tgoossen <tgoossen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/24 16:15:56 by tgoossen          #+#    #+#             */
-/*   Updated: 2024/02/22 14:44:06 by tgoossen         ###   ########.fr       */
+/*   Updated: 2024/04/17 12:52:18 by tgoossen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,5 +68,5 @@ int		ft_hexpointer(void *str);
 int		ft_putchar(char c);
 int		putstr(const char *c);
 int		allbase(long nb, char *base);
-
+long long	ft_atoll(const char *nptr);
 #endif

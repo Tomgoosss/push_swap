@@ -97,7 +97,7 @@ int check_if_push(t_list *head_a, t_list *head_b, t_list *last_a, t_num *man)
 		return(0);
 	if (head_b->data < head_a->data && head_b->data > last_a->data)
 		return(1);
-	if(head_b->data > man->high_a && head_b->data == man->high_b)
+	if(head_b->data > man->high_a && head_b->data == man->high_b && head_a->data == man->low_a)
 		return(1);
 	if(head_b->data < man->low_a && head_a->data == man->low_a)
 		return(1);
