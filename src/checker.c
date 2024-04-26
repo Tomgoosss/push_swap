@@ -6,7 +6,7 @@
 /*   By: tgoossen <tgoossen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 12:39:40 by tgoossen          #+#    #+#             */
-/*   Updated: 2024/04/18 13:18:45 by tgoossen         ###   ########.fr       */
+/*   Updated: 2024/04/26 14:19:22 by tgoossen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,10 +75,15 @@ int	check_max_min(char *str)
 }
 
 // checks if the argv is all numbers
-int	validcheck(int nodeamount, char *argv[])
+int	validcheck(int nodeamount, char *argv[], t_num *man)
 {
 	int	i;
 
+	if (nodeamount == 1)
+	{
+		free(man);
+		exit(0);
+	}
 	i = 1;
 	while (i != nodeamount)
 	{

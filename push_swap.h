@@ -6,7 +6,7 @@
 /*   By: tgoossen <tgoossen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 13:10:02 by tgoossen          #+#    #+#             */
-/*   Updated: 2024/04/24 10:24:52 by tgoossen         ###   ########.fr       */
+/*   Updated: 2024/04/26 14:18:44 by tgoossen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ typedef struct num
 }	t_num;
 
 int		ft_str_isnumeric(char *str);
-int		validcheck(int argc, char *argv[]);
+int		validcheck(int argc, char *argv[], t_num *man);
 void	set0(t_num *man);
 void	teststacks(t_list **head_a, t_list **head_b);
 void	ft_s(t_list **head, char ab);
@@ -92,5 +92,6 @@ void	setzero(t_num *man);
 void	five_or_more(t_list **head_a, t_list **head_b, t_num *man);
 void	check_if_fit(t_list *node_a, t_list *node_b,
 			t_list *prev_b, t_num *man);
+int	check_if_sorted(t_list *head_a);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: tgoossen <tgoossen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 12:38:30 by tgoossen          #+#    #+#             */
-/*   Updated: 2024/04/24 13:26:53 by tgoossen         ###   ########.fr       */
+/*   Updated: 2024/04/26 14:18:24 by tgoossen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ void	add_node_back(t_list **head, t_list *node)
 	temp->link = node;
 }
 
-void	stackfiller(int argc, char *argv[], t_num *man, t_list **head_a)
+void	stackfiller(int argc, char *argv[], t_list **head_a)
 {
 	int	i;
 
@@ -78,13 +78,13 @@ int	main(int argc, char *argv[])
 
 	head_b = NULL;
 	man = ft_calloc(1, sizeof(t_num));
-	if (validcheck(argc, argv) == 1)
+	if (validcheck(argc, argv, man) == 1)
 	{
 		write(2, "Error\n", 6);
 		free(man);
 		exit(EXIT_FAILURE);
 	}
-	stackfiller(argc, argv, man, &head_a);
+	stackfiller(argc, argv, &head_a);
 	if (check_dupe_num(&head_a) == 1)
 	{
 		write(2, "Error\n", 6);
@@ -92,7 +92,8 @@ int	main(int argc, char *argv[])
 		free(man);
 		exit(EXIT_FAILURE);
 	}
-	sortmain(&head_a, &head_b, argc - 1, man);
+	if (check_if_sorted(head_a))
+		sortmain(&head_a, &head_b, argc - 1, man);
 	free_nodes(&head_a, &head_b);
 	free(man);
 }

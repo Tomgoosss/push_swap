@@ -6,7 +6,7 @@
 /*   By: tgoossen <tgoossen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 13:05:30 by tgoossen          #+#    #+#             */
-/*   Updated: 2024/04/18 13:29:46 by tgoossen         ###   ########.fr       */
+/*   Updated: 2024/04/25 10:14:29 by tgoossen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,6 @@ void	fix_two_node(t_list **head_a)
 
 void	sort_four(t_list **head_a, t_list **head_b)
 {
-	t_list	*temp;
-
 	ft_p(head_a, head_b, 'a');
 	sort_last_three(head_a);
 	if ((*head_b)->data < (*head_a)->data)

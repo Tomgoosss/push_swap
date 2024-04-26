@@ -6,7 +6,7 @@
 /*   By: tgoossen <tgoossen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/24 10:24:30 by tgoossen          #+#    #+#             */
-/*   Updated: 2024/04/24 10:40:42 by tgoossen         ###   ########.fr       */
+/*   Updated: 2024/04/25 10:39:57 by tgoossen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,4 +50,18 @@ void	rotate2(t_num *man, t_list **head_a, t_list **head_b)
 		ft_rotaterev(head_b, 'b');
 		man->rev_b--;
 	}
+}
+
+int	check_if_sorted(t_list *head_a)
+{
+	t_list	*temp_a;
+
+	temp_a = head_a;
+	while (temp_a && temp_a->link)
+	{
+		if (temp_a->data > temp_a->link->data)
+			return (1);
+		temp_a = temp_a->link;
+	}
+	return (0);
 }
